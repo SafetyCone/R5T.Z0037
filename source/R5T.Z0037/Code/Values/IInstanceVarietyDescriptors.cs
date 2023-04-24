@@ -32,6 +32,8 @@ namespace R5T.Z0037
                 instance.DataTypes,
                 instance.DemonstrationDrafts,
                 instance.Demonstrations,
+                instance.Documentation,
+                instance.DocumentationDrafts,
                 instance.ExperimentDrafts,
                 instance.Experiments,
                 instance.ExplorationDrafts,
@@ -47,6 +49,10 @@ namespace R5T.Z0037
                 instance.ServiceImplementationDrafts,
                 instance.ServiceImplementations,
                 instance.StrongTypeDrafts,
+                instance.StrongTypeImplementationDrafts,
+                instance.StrongTypeImplementations,
+                instance.StrongTypeInterfaceDrafts,
+                instance.StrongTypeInterfaces,
                 instance.StrongTypes,
                 instance.TypeDrafts,
                 instance.Types,
@@ -135,6 +141,20 @@ namespace R5T.Z0037
             MarkerAttributeTypeName = "R5T.T0141.DemonstrationsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Demonstrations,
             Target = InstanceVarietyTarget.MethodsOfType,
+        };
+
+        public InstanceVarietyDescriptor Documentation => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0156.DocumentationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.Documentation,
+            Target = InstanceVarietyTarget.StaticReadOnlyObjects,
+        };
+
+        public InstanceVarietyDescriptor DocumentationDrafts => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0156.DraftDocumentationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.DocumentationDrafts,
+            Target = InstanceVarietyTarget.StaticReadOnlyObjects,
         };
 
         public InstanceVarietyDescriptor DemonstrationDrafts => new InstanceVarietyDescriptor
@@ -246,6 +266,34 @@ namespace R5T.Z0037
         {
             MarkerAttributeTypeName = "R5T.T0150.StrongTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypes,
+            Target = InstanceVarietyTarget.Type,
+        };
+
+        public InstanceVarietyDescriptor StrongTypeInterfaces => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0178.StrongTypeMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.StrongTypeInterfaces,
+            Target = InstanceVarietyTarget.Type,
+        };
+
+        public InstanceVarietyDescriptor StrongTypeInterfaceDrafts => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0178.DraftStrongTypeMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.StrongTypeInterfaceDrafts,
+            Target = InstanceVarietyTarget.Type,
+        };
+
+        public InstanceVarietyDescriptor StrongTypeImplementations => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0178.StrongTypeImplementationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.StrongTypeImplementations,
+            Target = InstanceVarietyTarget.Type,
+        };
+
+        public InstanceVarietyDescriptor StrongTypeImplementationDrafts => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0178.DraftStrongTypeImplementationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.StrongTypeImplementationDrafts,
             Target = InstanceVarietyTarget.Type,
         };
 

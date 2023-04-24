@@ -20,6 +20,8 @@ namespace R5T.Z0037
         public InstanceVarietyName DataTypeDrafts => "DataType-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName Demonstrations => "Demonstrations".ToInstanceVarietyName();
         public InstanceVarietyName DemonstrationDrafts => "Demonstration-Drafts".ToInstanceVarietyName();
+        public InstanceVarietyName Documentation => "Documentation".ToInstanceVarietyName();
+        public InstanceVarietyName DocumentationDrafts => "Documentation-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName Experiments => "Experiments".ToInstanceVarietyName();
         public InstanceVarietyName ExperimentDrafts => "Experiment-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName Explorations => "Explorations".ToInstanceVarietyName();
@@ -36,11 +38,15 @@ namespace R5T.Z0037
         public InstanceVarietyName ServiceImplementationDrafts => "ServiceImplementation-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName StrongTypes => "StrongTypes".ToInstanceVarietyName();
         public InstanceVarietyName StrongTypeDrafts => "StrongType-Drafts".ToInstanceVarietyName();
+        public InstanceVarietyName StrongTypeInterfaces => "StrongType-Interfaces".ToInstanceVarietyName();
+        public InstanceVarietyName StrongTypeInterfaceDrafts => "StrongType-Interface-Drafts".ToInstanceVarietyName();
+        public InstanceVarietyName StrongTypeImplementations => "StrongType-Implementation".ToInstanceVarietyName();
+        public InstanceVarietyName StrongTypeImplementationDrafts => "StrongType-Implementation-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName Types => "Types".ToInstanceVarietyName();
         public InstanceVarietyName TypeDrafts => "Type-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName UtilityTypes => "UtilityTypes".ToInstanceVarietyName();
         public InstanceVarietyName UtilityTypeDrafts => "UtilityType-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName Values => "Values".ToInstanceVarietyName();
-        public InstanceVarietyName ValueDrafts => "ValueDrafts".ToInstanceVarietyName();
+        public InstanceVarietyName ValueDrafts => "Value-Drafts".ToInstanceVarietyName();
     }
 }
