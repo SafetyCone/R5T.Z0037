@@ -7,7 +7,6 @@ using R5T.T0131;
 using R5T.T0161.Extensions;
 using R5T.T0169;
 using R5T.T0171;
-using R5T.T0171.Extensions;
 
 
 namespace R5T.Z0037
@@ -45,6 +44,8 @@ namespace R5T.Z0037
                 instance.Markers,
                 instance.RazorComponentDrafts,
                 instance.RazorComponents,
+                instance.RazorLayouts,
+                instance.RazorPages,
                 instance.ServiceDefinitionDrafts,
                 instance.ServiceDefinitions,
                 instance.ServiceImplementationDrafts,
@@ -225,6 +226,27 @@ namespace R5T.Z0037
         {
             MarkerAttributeTypeName = "R5T.T0154.RazorComponentMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorComponents,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor RazorLayouts => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0154.RazorLayoutMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.RazorLayouts,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor RazorLinks => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0223.RazorLinkMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.RazorLinks,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor RazorPages => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0154.RazorPageMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.RazorPages,
             Targets = InstanceVarietyTarget.Type.ToArray(),
         };
 

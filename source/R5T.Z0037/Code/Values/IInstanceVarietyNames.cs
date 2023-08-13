@@ -32,6 +32,9 @@ namespace R5T.Z0037
         public InstanceVarietyName MarkerDrafts => "MarkerDrafts".ToInstanceVarietyName();
         public InstanceVarietyName RazorComponents => "RazorComponents".ToInstanceVarietyName();
         public InstanceVarietyName RazorComponentDrafts => "RazorComponent-Drafts".ToInstanceVarietyName();
+        public InstanceVarietyName RazorLayouts => "RazorLayouts".ToInstanceVarietyName();
+        public InstanceVarietyName RazorLinks => "RazorLinks".ToInstanceVarietyName();
+        public InstanceVarietyName RazorPages => "RazorPages".ToInstanceVarietyName();
         public InstanceVarietyName ServiceDefinitions => "ServiceDefinitions".ToInstanceVarietyName();
         public InstanceVarietyName ServiceDefinitionDrafts => "ServiceDefinition-Drafts".ToInstanceVarietyName();
         public InstanceVarietyName ServiceImplementations => "ServiceImplementations".ToInstanceVarietyName();
