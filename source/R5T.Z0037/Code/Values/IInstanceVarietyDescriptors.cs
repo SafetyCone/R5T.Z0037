@@ -36,6 +36,7 @@ namespace R5T.Z0037
                 instance.Demonstrations,
                 instance.Documentation,
                 instance.DocumentationDrafts,
+                instance.Entities,
                 instance.ExperimentDrafts,
                 instance.Experiments,
                 instance.ExplorationDrafts,
@@ -49,6 +50,9 @@ namespace R5T.Z0037
                 instance.RazorComponents,
                 instance.RazorLayouts,
                 instance.RazorPages,
+                instance.RepositoryDefinitions,
+                instance.RepositoryImplementations,
+                instance.Scripts,
                 instance.ServiceDefinitionDrafts,
                 instance.ServiceDefinitions,
                 instance.ServiceImplementationDrafts,
@@ -165,6 +169,20 @@ namespace R5T.Z0037
             Targets = InstanceVarietyTarget.Type.ToArray(),
         };
 
+        public InstanceVarietyDescriptor DbContextDefinitions => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0250.DbContextDefinitionMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.DbContextDefinitions,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor DbContextImplementations => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0250.DbContextImplementationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.DbContextImplementations,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
         public InstanceVarietyDescriptor Demonstrations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.DemonstrationsMarkerAttribute".ToAttributeTypeName(),
@@ -191,6 +209,13 @@ namespace R5T.Z0037
             MarkerAttributeTypeName = "R5T.T0141.DraftDemonstrationsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DemonstrationDrafts,
             Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor Entities => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0249.EntityMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.Entities,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
         };
 
         public InstanceVarietyDescriptor Experiments => new InstanceVarietyDescriptor
@@ -256,6 +281,13 @@ namespace R5T.Z0037
             Targets = InstanceVarietyTarget.Type.ToArray(),
         };
 
+        public InstanceVarietyDescriptor PhysicalDbContextImplementations => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0250.PhysicalDbContextImplementationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.PhysicalDbContextImplementations,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
         public InstanceVarietyDescriptor RazorComponents => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0154.RazorComponentMarkerAttribute".ToAttributeTypeName(),
@@ -289,6 +321,27 @@ namespace R5T.Z0037
             MarkerAttributeTypeName = "R5T.T0154.DraftRazorComponentMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorComponentDrafts,
             Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor RepositoryDefinitions => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0247.RepositoryDefinitionMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.RepositoryDefinitions,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor RepositoryImplementations => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0247.RepositoryImplementationMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.RepositoryImplementations,
+            Targets = InstanceVarietyTarget.Type.ToArray(),
+        };
+
+        public InstanceVarietyDescriptor Scripts => new InstanceVarietyDescriptor
+        {
+            MarkerAttributeTypeName = "R5T.T0246.ScriptsMarkerAttribute".ToAttributeTypeName(),
+            Name = Instances.InstanceVarietyNames.Scripts,
+            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
         };
 
         public InstanceVarietyDescriptor ServiceDefinitions => new InstanceVarietyDescriptor
