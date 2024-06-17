@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using R5T.F0000.ArrayExtensions;
+using R5T.L0066.ArrayExtensions;
 using R5T.T0131;
 using R5T.T0161.Extensions;
 using R5T.T0169;
@@ -100,35 +100,35 @@ namespace R5T.Z0037
         {
             MarkerAttributeTypeName = "R5T.T0244.CheckMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Checks,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Constants => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0131.ConstantsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Constants,
-            Targets = InstanceVarietyTarget.PropertiesOfType.ToArray(),
+            Targets = InstanceVarietyTarget.PropertiesOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor ConstantDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0131.DraftConstantsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ConstantDrafts,
-            Targets = InstanceVarietyTarget.PropertiesOfType.ToArray(),
+            Targets = InstanceVarietyTarget.PropertiesOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor ContextDefinitions => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0137.ContextDefinitionMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ContextDefinitions,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor ContextImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0137.ContextImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ContextImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor ContextOperations => new InstanceVarietyDescriptor
@@ -147,14 +147,14 @@ namespace R5T.Z0037
         {
             MarkerAttributeTypeName = "R5T.T0137.ContextTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ContextTypes,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor ContextTypeDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0137.DraftContextTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ContextTypeDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
 
@@ -162,315 +162,315 @@ namespace R5T.Z0037
         {
             MarkerAttributeTypeName = "R5T.T0142.DataTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DataTypes,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor DataTypeDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0142.DraftDataTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DataTypeDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor DbContextDefinitions => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0250.DbContextDefinitionMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DbContextDefinitions,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor DbContextImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0250.DbContextImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DbContextImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Demonstrations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.DemonstrationsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Demonstrations,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor Documentation => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0156.DocumentationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Documentation,
-            Targets = InstanceVarietyTarget.StaticReadOnlyObjects.ToArray(),
+            Targets = InstanceVarietyTarget.StaticReadOnlyObjects.To_Array(),
         };
 
         public InstanceVarietyDescriptor DocumentationDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0156.DraftDocumentationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DocumentationDrafts,
-            Targets = InstanceVarietyTarget.StaticReadOnlyObjects.ToArray(),
+            Targets = InstanceVarietyTarget.StaticReadOnlyObjects.To_Array(),
         };
 
         public InstanceVarietyDescriptor DemonstrationDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.DraftDemonstrationsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.DemonstrationDrafts,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor Entities => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0249.EntityMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Entities,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Experiments => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.ExperimentsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Experiments,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor ExperimentDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.DraftExperimentsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ExperimentDrafts,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor Explorations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.ExplorationsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Explorations,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor ExplorationDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0141.DraftExplorationsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ExplorationDrafts,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor Functions => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0132.FunctionalityMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Functions,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor FunctionDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0132.DraftFunctionalityMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.FunctionDrafts,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor HasXs => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0240.HasXMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.HasXs,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Markers => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0143.MarkerAttributeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Markers,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor MarkerDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0143.DraftMarkerAttributeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.MarkerDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor PhysicalDbContextImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0250.PhysicalDbContextImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.PhysicalDbContextImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RazorComponents => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0154.RazorComponentMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorComponents,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RazorLayouts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0154.RazorLayoutMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorLayouts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RazorLinks => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0223.RazorLinkMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorLinks,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RazorPages => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0154.RazorPageMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorPages,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RazorComponentDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0154.DraftRazorComponentMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RazorComponentDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RepositoryDefinitions => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0247.RepositoryDefinitionMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RepositoryDefinitions,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor RepositoryImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0247.RepositoryImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.RepositoryImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Scripts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0246.ScriptsMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Scripts,
-            Targets = InstanceVarietyTarget.MethodsOfType.ToArray(),
+            Targets = InstanceVarietyTarget.MethodsOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor ServiceDefinitions => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0064.ServiceDefinitionMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ServiceDefinitions,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor ServiceDefinitionDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0064.DraftServiceDefinitionMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ServiceDefinitionDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor ServiceImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0064.ServiceImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ServiceImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor ServiceImplementationDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0064.DraftServiceImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ServiceImplementationDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor StrongTypes => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0150.StrongTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypes,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor StrongTypeInterfaces => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0178.StrongTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypeInterfaces,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor StrongTypeInterfaceDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0178.DraftStrongTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypeInterfaceDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor StrongTypeImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0178.StrongTypeImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypeImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor StrongTypeImplementationDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0178.DraftStrongTypeImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypeImplementationDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor StrongTypeDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0150.DraftStrongTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.StrongTypeDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Types => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0142.TypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.Types,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor TestArticleImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0243.TestArticleImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.TestArticleImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor TestArticles => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0243.TestArticleMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.TestArticles,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor TestFixtureImplementations => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0243.TestFixtureImplementationMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.TestFixtureImplementations,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor TestFixtures => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0243.TestFixtureMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.TestFixtures,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor TypeDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0142.DraftTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.TypeDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor UtilityTypes => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0142.UtilityTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.UtilityTypes,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor UtilityTypeDrafts => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0142.DraftUtilityTypeMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.UtilityTypeDrafts,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
 
         public InstanceVarietyDescriptor Values => new InstanceVarietyDescriptor
@@ -488,14 +488,14 @@ namespace R5T.Z0037
         {
             MarkerAttributeTypeName = "R5T.T0131.DraftValuesMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.ValueDrafts,
-            Targets = InstanceVarietyTarget.PropertiesOfType.ToArray(),
+            Targets = InstanceVarietyTarget.PropertiesOfType.To_Array(),
         };
 
         public InstanceVarietyDescriptor WithXs => new InstanceVarietyDescriptor
         {
             MarkerAttributeTypeName = "R5T.T0240.WithXMarkerAttribute".ToAttributeTypeName(),
             Name = Instances.InstanceVarietyNames.WithXs,
-            Targets = InstanceVarietyTarget.Type.ToArray(),
+            Targets = InstanceVarietyTarget.Type.To_Array(),
         };
     }
 }
